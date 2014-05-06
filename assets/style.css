@@ -1,0 +1,20 @@
+body {
+	font-family: 'Great Vibes', cursive;
+	margin: 0px;
+}
+#box {
+	position: fixed;
+	width: 100%;
+	top: 50%;
+	margin-top: -94px;
+	text-align: center;
+}
+#website-of {
+	font-size: 25px;
+}
+#name {
+	font-size: 100px;
+}
+#arriving {
+	font-size: 25px;
+}

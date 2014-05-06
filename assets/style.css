@@ -10,12 +10,26 @@ body {
 	color: white;
 	margin: 0px;
 }
+a {
+	text-decoration: none;
+	color: inherit;
+}
 #box {
 	position: fixed;
-	width: 100%;
+	width: 450px;
+	left: 50%;
+	margin-left: -225px;
 	top: 50%;
-	margin-top: -94px;
+	margin-top: -104px;
+	padding: 10px 0px;
+	border-radius: 20px;
 	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#box:hover {
+	background: rgba(255,255,255,0.2);
+	-webkit-transform: scale(1.1,1.1);
 }
 #website-of {
 	font-size: 25px;

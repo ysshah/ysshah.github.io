@@ -14,13 +14,16 @@ a {
 	text-decoration: none;
 	color: white;
 }
+#acronym-link:hover {
+    text-decoration: underline;
+}
 #box {
 	position: fixed;
 	width: 450px;
 	left: 50%;
 	margin-left: -225px;
 	top: 50%;
-	margin-top: -104px;
+	margin-top: -204px;
 	padding: 10px 0px;
 	border-radius: 20px;
 	text-align: center;
@@ -39,4 +42,14 @@ a {
 }
 #arriving {
 	font-size: 25px;
+}
+#acronym {
+    position: fixed;
+    width: 450px;
+    text-align: center;
+    left: 50%;
+    margin-left: -225px;
+    bottom: 50%;
+    margin-bottom: -40px;
+    font-size: 30px;
 }

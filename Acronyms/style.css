@@ -1,0 +1,45 @@
+html {
+	font-family: "Helvetica";
+}
+body {
+	margin: 0px;
+}
+#input {
+	display: block;
+	width: 660px;
+	height: 60px;
+	margin: 0px auto;
+	padding: 0px 20px;
+	font-size: 32px;
+	border: 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#input:focus {
+	outline: none;
+}
+#output {
+	width: 700px;
+	margin: 0px auto;
+	padding-bottom: 200px;
+}
+.container:not(:last-child) {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.acronym {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	padding: 10px 10px;
+}
+.definition {
+	display: inline-block;
+	padding: 10px 10px;
+	width: 560px;
+}
+.description {
+	font-weight: 100;
+}
+.highlight {
+	display: inline;
+	background-color: yellow;
+}

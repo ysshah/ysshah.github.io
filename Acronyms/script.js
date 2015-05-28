@@ -65,7 +65,6 @@ $(document).ready(function(){
         "SDP":       "Software Defined Platform|",
         "VSN":       "Virtual Service Node|",
         "SBP":       "Subscription Billing Platform|",
-        "SDP":       "Software Defined Platform|",
         // "CPD":       "Control Point Discovery|?",
         // "CLD":       "?|?",
         // "IS":        "?|?",
@@ -94,7 +93,7 @@ $(document).ready(function(){
         "ICE Gateway":"ICE Gateway|Our wireless infrastructure (IaaS: Infrastructure as a Service) optimizes the outdoor lighting and adds many value added services for people passing by lights and also for sensors and devices (IoT: Internet of Things) in smart cities. ICE turns the streetlights to a high bandwidth (3G) infrastructure for outdoor lighting, traffic, real time marketing, security and logistic. Our customers have no additional efforts and hidden costs. You do not need any ISP (Internet Service Provider) or new telecommunication contracts, and will be in the position to use the ICE IaaS in combination with your preferred suppliers for lights, devices, applications and sensors.",
         "Bajaj":     "Bajaj Electricals|An Indian consumer electrical equipments manufacturing company based in Mumbai, Maharashtra. It is a part of the Rs. 380 billion (US $6.0 billion) Bajaj Group. It has diversified with interests in lighting, luminaries, appliances, fans, LPG based Generators, engineering and projects. Its main domains are lighting, consumer durables, engineering and projects. Lighting includes lamps, tubes and luminaires. Consumer durables include appliances and fans. Engineering and projects include transmission line towers, telecommunications towers, highmast, poles and special projects, and others include die casting, wind energy & solar energy. Some notable project includes lighting works at the Commonwealth Games stadium and the Bandra Worli Sea Link.",
         "Sensys":    "Sensys Networks|As a leading wireless technology company, Sensys Networks provides traffic visionaries and implementers with a comprehensive data solution. Our suite of products and traffic management solutions, together with its esteemed list of integration partners, helps drive efficient, economic and environmental improvements for cities."
-        };
+    };
 
     acronyms = Object.keys(definitions).sort();
 

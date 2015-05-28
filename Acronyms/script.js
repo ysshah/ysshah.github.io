@@ -96,7 +96,18 @@ $(document).ready(function(){
         "Sensys":    "Sensys Networks|As a leading wireless technology company, Sensys Networks provides traffic visionaries and implementers with a comprehensive data solution. Our suite of products and traffic management solutions, together with its esteemed list of integration partners, helps drive efficient, economic and environmental improvements for cities."
         };
 
-    acronyms = Object.keys(definitions);
+    acronyms = Object.keys(definitions).sort();
+
+    for (var i = 0; i < acronyms.length; i++) {
+        var acr = acronyms[i];
+        var sep = definitions[acr].split("|");
+        var name = sep[0];
+        var desc = sep[1];
+        $("#output").append(
+            "<div class='container'><div class='acronym'>"
+            +acr+"</div>"+"<div class='definition'>"
+            +name+"<div class='description'>"+desc+"</div></div></div>");
+    };
 
     $("#input").keyup(function(e){
         if (e.keyCode != 13 && e.keyCode != 16) {
@@ -107,11 +118,11 @@ $(document).ready(function(){
                 q.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&"), "i");
             var matches = $.grep(acronyms, function(n, i){
                 return n.match(regex) != null;
-            }).sort();
+            });
             matches = matches.concat($.grep(acronyms, function(n, i){
                 return definitions[n].match(regex) != null
                        && n.match(regex) == null;
-            }).sort());
+            }));
             for (var i = 0; i < matches.length; i++) {
                 var acr = matches[i];
                 var def = definitions[acr];

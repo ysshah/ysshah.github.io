@@ -123,52 +123,66 @@ $(document).ready(function(){
             var q = $("#input").val();
             var regex = new RegExp(
                 q.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&"), "i");
-            var matches = $.grep(acronyms, function(n, i){
+            var acr_matches = $.grep(acronyms, function(n, i){
                 return n.match(regex) != null;
             });
-            matches = matches.concat($.grep(acronyms, function(n, i){
-                return definitions[n].replace(/<.+?>/g," ").match(regex) != null
-                       && n.match(regex) == null;
-            }));
-            for (var i = 0; i < matches.length; i++) {
-                var acr = matches[i];
-                var sep = definitions[acr].split("|");
-                var name = sep[0], desc = sep[1];
-                var link_address = sep[2], link_name = sep[3] ? sep[3] : "More Info";
+            var title_matches = $.grep(acronyms, function(n, i){
+                return definitions[n].split("|")[0].match(regex) != null
+                    && n.match(regex) == null;
+            });
+            var desc_matches = $.grep(acronyms, function(n, i){
+                return definitions[n].split("|")[1].replace(/<.+?>/g," ")
+                    .match(regex) != null && n.match(regex) == null
+                    && definitions[n].split("|")[0].match(regex) == null;
+            });
 
-                var match = regex.exec(acr);
-                if (match) {
-                    var j = match.index;
-                    acr = acr.slice(0, j) + "<div class='highlight'>"
-                          + acr.slice(j, j + q.length)
-                          + "</div>" + acr.slice(j + q.length);
-                } else {
-                    match = regex.exec(name);
-                    if (match) {
-                        var j = match.index;
-                        name = name.slice(0, j) + "<div class='highlight'>"
-                              + name.slice(j, j + q.length)
-                              + "</div>" + name.slice(j + q.length);
-                    } else {
-                        j = regex.exec(desc).index;
-                        desc = desc.slice(0, j) + "<div class='highlight'>"
-                              + desc.slice(j, j + q.length)
-                              + "</div>" + desc.slice(j + q.length);
-                    };
-                };
-
-                var link = link_address ?
-                    "<a href='"+link_address+"' target='_blank'>"+link_name+"</a>"
-                    : "";
-
-                $("#output").append(
-                    "<div class='container'><div class='acronym'>"
-                    +acr+"</div><div class='definition'><div class='title'>"
-                    +name+"</div><div class='link'>"+link+"</div><div class='description'>"
-                    +desc+"</div></div></div>");
-            };
+            highlightAndAppend(acr_matches, q, regex, "acr");
+            highlightAndAppend(title_matches, q, regex, "title");
+            highlightAndAppend(desc_matches, q, regex, "desc");  
         };
     });
+
+    function highlightAndAppend(matches, q, regex, s) {
+        for (var i = 0; i < matches.length; i++) {
+            var acr = matches[i];
+            var sep = definitions[acr].split("|");
+            var title = sep[0], desc = sep[1];
+            var link_address = sep[2], link_name = sep[3] ? sep[3] : "More Info";
+
+            switch(s) {
+                case "acr":
+                    acr = highlight(regex, acr, q);
+                    break;
+                case "title":
+                    title = highlight(regex, title, q);
+                    break;
+                case "desc":
+                    desc = highlight(regex, desc, q);
+                    break;
+            }
+
+            append(acr, title, link_address, link_name, desc);
+        };
+    };
+
+    function highlight(regex, part, q) {
+        var j = regex.exec(part).index;
+        return part.slice(0, j) + "<div class='highlight'>"
+            + part.slice(j, j + q.length)
+            + "</div>" + part.slice(j + q.length);
+    }
+
+    function append(acr, title, link_address, link_name, desc) {
+        var link = link_address ?
+            "<a href='"+link_address+"' target='_blank'>"+link_name+"</a>"
+            : "";
+
+        $("#output").append(
+            "<div class='container'><div class='acronym'>"
+            +acr+"</div><div class='definition'><div class='title'>"
+            +title+"</div><div class='link'>"+link+"</div><div class='description'>"
+            +desc+"</div></div></div>");
+    };
 
     var first;
 

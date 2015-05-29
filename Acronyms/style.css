@@ -4,6 +4,16 @@ html, input {
 body {
 	margin: 0px;
 }
+a {
+	font-weight: 400;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: blue;
+}
 #input {
 	display: block;
 	width: 660px;

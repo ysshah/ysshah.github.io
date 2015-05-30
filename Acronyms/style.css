@@ -14,19 +14,38 @@ a:hover {
 a:visited {
 	color: blue;
 }
+#input-wrapper {
+    position: relative;
+    width: 700px;
+    margin: 0px auto;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
 #input {
 	display: block;
-	width: 660px;
+	width: 520px;
 	height: 60px;
-	margin: 0px auto;
+    font-size: 32px;
+/*	margin: 0px auto;*/
 	padding: 0px 20px;
-	font-size: 32px;
 	border: 0px;
-	border-bottom: 1px solid rgba(0,0,0,0.1);
+    line-height: 60px;
 	font-weight: 300;
 }
 #input:focus {
 	outline: none;
+}
+#results {
+    position: absolute;
+    right: 20px;
+    height: 60px;
+    font-weight: 300;
+    line-height: 60px;
+    font-size: 32px;
+    top: 0px;
+    color: rgba(0,0,0,0.4);
+}
+#number {
+    display: inline-block;
 }
 #output {
 	width: 700px;
@@ -62,4 +81,13 @@ a:visited {
 .highlight {
 	display: inline;
 	background-color: yellow;
+}
+.search {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    color: blue;
+    margin-top: 25px;
+    margin-bottom: -5px;
 }

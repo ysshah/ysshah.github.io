@@ -109,6 +109,8 @@ $(document).ready(function(){
             "<a href='"+link_address+"' target='_blank'>"+link_name+"</a>"
             : "";
 
+        $("#results").text(acronyms.length + " results");
+
         $("#output").append(
             "<div class='container'><div class='acronym'>"
             +acr+"</div><div class='definition'><div class='title'>"
@@ -135,6 +137,15 @@ $(document).ready(function(){
                     .match(regex) != null && n.match(regex) == null
                     && definitions[n].split("|")[0].match(regex) == null;
             });
+            
+            var numResults = acr_matches.length + title_matches.length
+                             + desc_matches.length
+            var resString = (numResults == 1) ? " result" : " results"
+            $("#results").text(numResults + resString);
+            
+            if (numResults == 0) {
+                $("#output").append("<a class='search' target='_blank' href='http://en.wikipedia.org/w/index.php?search=" + q + "'>Search Wikipedia for \""+q+"\"?</a><a class='search' target='_blank' href='https://www.google.com/search?q="+q+"'>Search Google for \""+q+"\"?</a>");
+            };
 
             highlightAndAppend(acr_matches, q, regex, "acr");
             highlightAndAppend(title_matches, q, regex, "title");

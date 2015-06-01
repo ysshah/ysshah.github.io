@@ -199,18 +199,19 @@ $(document).ready(function(){
 
     $("#input").keydown(function(e){
         if (e.keyCode == 13) {
-            if (first == null) {
+            if (!e.shiftKey && first == null) {
                 first = $("div.container:first-child");
-            } else if (e.shiftKey && !first.is("div.container:first-child")) {
-                first = first.prev();
             } else if (!e.shiftKey && !first.is("div.container:last-child")) {
                 first = first.next();
+            } else if (e.shiftKey && !first.is("div.container:first-child")) {
+                first = first.prev();
+            } else if (e.shiftKey && first.is("div.container:first-child")) {
+                first = null;
             };
-            if (first) {
-                $("html, body").animate({
-                    scrollTop: first.offset().top + "px"
-                }, "fast");
-            };
+            var offset = first ? first.offset().top : 0;
+            $("html, body").animate({
+                scrollTop: offset + "px"
+            }, "fast");
         };
     });
 

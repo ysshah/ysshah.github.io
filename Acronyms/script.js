@@ -195,18 +195,21 @@ $(document).ready(function(){
             +desc+"</div></div></div>");
     };
 
-    var first;
+    var first = null;
 
     $("#input").keydown(function(e){
         if (e.keyCode == 13) {
-            if (!e.shiftKey && first == null) {
-                first = $("div.container:first-child");
-            } else if (!e.shiftKey && !first.is("div.container:last-child")) {
+            if (!e.shiftKey && first && first.is(".container:last-child")
+                || e.shiftKey && !first) {
+                return;
+            } else if (!e.shiftKey && !first) {
+                first = $(".container:first-child");
+            } else if (!e.shiftKey) {
                 first = first.next();
-            } else if (e.shiftKey && !first.is("div.container:first-child")) {
-                first = first.prev();
-            } else if (e.shiftKey && first.is("div.container:first-child")) {
+            } else if (e.shiftKey && first.is(".container:first-child")) {
                 first = null;
+            } else if (e.shiftKey) {
+                first = first.prev();
             };
             var offset = first ? first.offset().top : 0;
             $("html, body").animate({

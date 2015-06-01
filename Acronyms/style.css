@@ -91,3 +91,11 @@ a:visited {
     margin-top: 25px;
     margin-bottom: -5px;
 }
+.inlink {
+    display: inline;
+    color: blue;
+}
+.inlink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

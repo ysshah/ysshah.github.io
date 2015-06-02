@@ -130,6 +130,7 @@ $(document).ready(function(){
         }, "fast");
         $("#input").val($(this).text());
         query();
+        $("#input").focus();
     });
     
     function query(){

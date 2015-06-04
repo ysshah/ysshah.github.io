@@ -10,10 +10,32 @@
 <body>
 
 <div id="input-wrapper">
-    <input id="input" placeholder="Search for a term..." autofocus></input>
+    <input id="input" placeholder="Search for a term..." autofocus>
     <div id="results"></div>
+    <!-- edit by Pham Thi Dieu Linh from the Noun Project -->
+    <img id="menu" src="new.svg">
 </div>
 <div id="output"></div>
+
+<div id="dimmer">
+<div id="submit-wrapper">
+    <div id="submit-content">
+        <div id="submit-title">Submit a new entry</div>
+        <input id="submit-acr" class="submit" placeholder="Acronym or Term">
+        <input id="submit-name" class="submit" placeholder="Title">
+        <textarea id="submit-desc" class="submit" placeholder="Description (optional)"></textarea>
+        <input id="submit-link" class="submit" placeholder="Website (optional, ex. 'http://en.wikipedia.org/wiki/[acronym]')">
+        <input id="submit-link-desc" class="submit" placeholder="Website Description (optional, ex. 'Wiki')">
+        <button id="cancel">Cancel</button>
+        <button id="submit">Submit</button>
+    </div>
+    <div id="thanks-content">
+        <div id="thanks-title">Thanks for your submission!</div>
+        <div id="thanks-subtitle">Please send the opened email. I will review and commit the new entry shortly.</div>
+        <button id="close">Close</button>
+    </div>
+</div>
+</div>
 
 </body>
 </html>

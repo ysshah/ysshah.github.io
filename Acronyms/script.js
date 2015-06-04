@@ -63,6 +63,7 @@ $(document).ready(function(){
         "OEM":       "Original Equipment Manufacturer|Original equipment manufacturer (OEM) is a term used when one company makes a part or subsystem that is used in another company's end product. The term is used in several ways, each of which is clear within a context. The term sometimes refers to a part or subassembly maker, sometimes to a final assembly maker, and sometimes to a mental category comprising those two in contrast to all other third-party makers of parts or subassemblies from the aftermarket.<br>In the first usage, the OEM is the company that makes a part that is marketed by another company, typically as a component of the second company's own product. For example, if Acme Manufacturing Co. makes power cords that are used on IBM computers, Acme is regarded as the OEM of the power cords.<br>In the second usage, OEM refers to companies like value-added resellers, which are the second manufacturer in the definition above. If, for example, Hewlett-Packard sells circuit boards to Acme Systems for use in Acme's security systems, HP refers to Acme as an OEM.<br>In the third usage, OEM is a mental category for all of the makers involved when a final assembly was first built (originally equipped)—in contrast to whoever made aftermarket parts that were installed later. For example, if Ford used Autolite spark plugs, Exide batteries, Bosch fuel injectors, and Ford's own engine blocks and heads when building a car, then car restorers and collectors consider all of those brands as OEM brands, in contrast to aftermarket brands (such as Champion plugs, DieHard batteries, Kinsler fuel injectors, and BMP engine blocks and heads). This can mean that Bosch injectors are considered OEM parts on one car model and aftermarket parts on another model.|http://en.wikipedia.org/wiki/Original_equipment_manufacturer|Wiki",
         "SI":        "Systems Integrator|A systems integrator is a person or company that specializes in bringing together component subsystems into a whole and ensuring that those subsystems function together, a practice known as system integration. Systems integrators may work in many fields but the term is generally used in the information technology (<div class='inlink'>IT</div>) field, the defense industry, or in media.<br>According to the Institute for Partner Education & Development, systems integrators traditionally realize approximately 50 percent of revenue from consulting services and 40 percent of revenue from IT services in design, implementation and post-transaction consulting. They are different from an IT Consultant in that they also take title to product.|http://en.wikipedia.org/wiki/Systems_integrator|Wiki",
         "PAK":       "Product Activation Key|A product key, also known as a software key, is a specific software-based key for a computer program. It certifies that the copy of the program is original. Activation is sometimes done offline by entering the key, or with software like Windows 8.1, online activation is required to prevent multiple people using the same key. Not all software has a product key, as some publishers may choose to use a different method to protect their copyright, or in some cases, such as open source software, copyright protection is not used.<br>Computer games use product keys to verify that the game has not been illegally copied. Likewise, one is not allowed to play online with two identical product keys at the same time.<br>Product keys consist of a series of numbers and/or letters. This sequence is typically entered by the user during the installation of computer software, and is then passed to a verification function in the program. This function manipulates the key sequence according to a mathematical algorithm and attempts to match the results to a set of valid solutions.|http://en.wikipedia.org/wiki/Product_key|Wiki",
+        "FCS":       "First Customer Shipment|The first date on which a product is actually shipped to a customer.|",
         "CDP":       "City Digital Platform|See <div class='inlink'>CIM</div>.",
         "E2E":       "End to End|",
         "MP":        "Marketplace|",
@@ -83,12 +84,14 @@ $(document).ready(function(){
         "DSL":       "Domain-Specific Language|A computer language specialized to a particular application domain. There is a wide variety of DSLs, ranging from widely used languages for common domains, such as HTML for web pages, down to languages used by only a single piece of software. DSLs can be further subdivided by the kind of language, and include domain-specific <i>markup</i> languages, domain-specific <i>modeling languages</i> (more generally, specification languages), and domain-specific <i>programming languages</i>. Special-purpose computer languages have always existed in the computer age, but the term \"domain-specific language\" has become more popular due to the rise of domain-specific modeling.|http://en.wikipedia.org/wiki/Domain-specific_language|Wiki",
         "DSM":       "Domain-Specific Modeling|A software engineering methodology for designing and developing systems, most often <div class='inlink'>IT</div> systems such as computer software. It involves systematic use of a graphical domain-specific language (<div class='inlink'>DSL</div>) to represent the various facets of a system. DSM languages tend to support higher-level abstractions than General-purpose modeling languages, so they require less effort and fewer low-level details to specify a given system.|http://en.wikipedia.org/wiki/Domain-specific_modeling|Wiki",
         "GPL":       "General-Purpose Language|A computer language broadly applicable across domains, and lacks specialized features for a particular domain.",
+        "REST":      "Representational State Transfer|Representational State Transfer (REST) is a software architecture style consisting of guidelines and best practices for creating scalable web services. REST is a coordinated set of constraints applied to the design of components in a distributed hypermedia system that can lead to a more performant and maintainable architecture.<br>REST has gained widespread acceptance across the Web as a simpler alternative to SOAP and WSDL-based Web services. RESTful systems typically, but not always, communicate over the Hypertext Transfer Protocol with the same HTTP verbs (GET, POST, PUT, DELETE, etc.) used by web browsers to retrieve web pages and send data to remote servers.<br>The REST architectural style was developed by W3C Technical Architecture Group (TAG) in parallel with HTTP 1.1, based on the existing design of HTTP 1.0. The World Wide Web represents the largest implementation of a system conforming to the REST architectural style.<br>A widely established design pattern for REST interfaces involves a number of resources (e.g. '/person/paul') that can be operated upon with standard HTTP verbs (e.g. \"DELETE /person/paul\").",
 
 
 
         "Sandbox":   "Sandbox|A sandbox is a testing environment that isolates untested code changes and outright experimentation from the production environment or repository, in the context of software development including Web development and revision control. Sandboxing protects \"live\" servers and their data, vetted source code distributions, and other collections of code, data and/or content, proprietary or public, from changes that could be damaging (regardless of the intent of the author of those changes) to a mission-critical system or which could simply be difficult to revert. Sandboxes replicate at least the minimal functionality needed to accurately test the programs or other code under development (e.g. usage of the same environment variables as, or access to an identical database to that used by, the stable prior implementation intended to be modified; there are many other possibilities, as the specific functionality needs vary widely with the nature of the code and the application[s] for which it is intended.<br>The concept of the sandbox (sometimes also called a working directory, a test server or development server) is typically built into revision control software such as CVS and Subversion (SVN), in which developers \"check out\" a copy of the source code tree, or a branch thereof, to examine and work on. Only after the developer has (hopefully) fully tested the code changes in their own sandbox should the changes be checked back into and merged with the repository and thereby made available to other developers or end users of the software.<br>By further analogy, the term \"sandbox\" can also be applied in computing and networking to other temporary or indefinite isolation areas, such as security sandboxes and search engine sandboxes (both of which have highly specific meanings), that prevent incoming data from affecting a \"live\" system (or aspects thereof) unless/until defined requirements or criteria have been met.|http://en.wikipedia.org/wiki/Sandbox_(software_development)|Wiki",
         "Agile Development":"Agile Software Development|A group of software development methods in which requirements and solutions evolve through collaboration between self-organizing, cross-functional teams. It promotes adaptive planning, evolutionary development, early delivery, continuous improvement, and encourages rapid and flexible response to change.|http://en.wikipedia.org/wiki/Agile_software_development|Wiki",
         "DT":        "Deutsche Telekom|A German telecommunications company headquartered in Bonn. Deutsche Telekom was formed in 1996 as the former state-owned monopoly Deutsche Bundespost was privatized. As of June 2008, the German government still holds a 15% stake in company stock directly, and another 17% through the government bank KfW.|http://en.wikipedia.org/wiki/Deutsche_Telekom|Wiki",
+        "ROI":       "Return on Intelligence|Return on Intelligence (ROI) is a global technology services firm. We provide technology consulting, systems integration and commercial software solutions. We bring industry insights, the ability to execute on a global basis and a keen eye for our clients’ bottom line that makes us an ideal and trusted partner for responding to business and technology change. Our services focus on customer centricity, data analytics, core systems transformation and the application of innovative and disruptive technologies. Our solutions deliver top-line growth, competitive advantage, margin improvement and reduced complexity. Return on Intelligence is headquartered in the United States with sales and delivery offices worldwide.|http://www.returnonintelligence.com/|Company Website",
         "TDC":       "Tele Danmark Communications|TDC A/S (formerly Tele Danmark) is a Danish telecommunications company dating back to 1879. As of today, TDC is the largest telephone company in Denmark with approx. 8.9 million customer relations (2010) within telephony, broadband, and television. The company's headquarters are located on Teglholmsgade in Copenhagen. Even though the Danish home market is the primary focus of business, TDC is also represented as a market challenger in Norway, Sweden, and Finland through the business unit TDC Nordic.|http://en.wikipedia.org/wiki/TDC_A/S|Wiki",
         "AGT":       "AGT International|Privately-held company headquartered in Switzerland, <div class='inlink'>IoT</div> Analytics platform. We apply our IoT analytics to the new wave of IoT data to uncover the patterns and relationships that lead to fresh business insights - insights that create new efficiencies, generate new revenue streams and improve corporate profitability. IoT analytics that will help businesses to create more innovative products and deliver them more efficiently. And enable cities to deliver new services and engage more effectively with citizens. As the premier supplier of specialized IoT analytics and a global IoT pioneer and leader AGT International is solving real-world problems for businesses and governments all over the world including smart cities, water infrastructure management, energy management, traffic management, critical asset management and large-scale event management.|https://www.agtinternational.com/|Company Website",
         "TCS":       "Tata Consultancy Services|Tata Consultancy Services (TCS) is a global leader in <div class='inlink'>IT</div> services, digital and business solutions that partners with its clients to simplify, strengthen and transform their businesses. We ensure the highest levels of certainty and satisfaction through a deep-set commitment to our clients, comprehensive industry expertise and a global network of innovation and delivery centers.|http://www.tcs.com/Pages/default.aspx|Company Website",
@@ -234,6 +237,97 @@ $(document).ready(function(){
             $("html, body").animate({
                 scrollTop: offset + "px"
             }, "fast");
+        };
+    });
+    
+    $("#menu").click(function(){
+        $("#dimmer").fadeIn(400, function(){
+            $("#submit-wrapper").fadeIn(400, function() {
+                $("#submit-acr").focus();
+            });
+        });
+    });
+    
+    $("#cancel, #close").click(function(){
+        closeAndClear();
+    });
+    
+    function closeAndClear() {
+        $("#submit-wrapper").fadeOut(400, function(){
+            $("#dimmer").fadeOut(400);
+            $(".submit").val("");
+            $("#submit-content").show();
+            $("#thanks-content").hide();
+            $("#submit-wrapper").css({
+                "margin-top":"-270px",
+                "height":"540px"
+            });
+            $("#submit-acr, #submit-name").css("border-color", "rgba(0,0,0,0.1)");
+        });
+    };
+    
+    $("#submit-acr, #submit-name").focusout(function(){
+        if ($(this).val()) {
+            $(this).css("border-color", "rgba(0,0,0,0.1)");
+        } else {
+            $(this).css("border-color", "rgb(255,0,0)");
+        }
+    });
+
+    $("#submit-acr, #submit-name").focusin(function(){
+        $(this).css("border-color", "rgba(0,0,0,0.1)");
+    });
+
+    $("#submit-link, #submit-link-desc").focusout(function(){
+        if ($("#submit-link").val() && !$("#submit-link-desc").val()) {
+            $("#submit-link-desc").css("border-color","red");
+        } else if ($("#submit-link-desc").val() && !$("#submit-link").val()) {
+            $("#submit-link").css("border-color","red");
+        };
+    });
+    
+    $("#submit-link, #submit-link-desc").focusin(function(){
+        $("#submit-link, #submit-link-desc").css("border-color", "rgba(0,0,0,0.1)");
+    });
+
+    $("#submit").click(function(){
+        var error = false;
+        if (!$("#submit-acr").val()) {
+            $("#submit-acr").css("border-color","red");
+            error = true;
+        };
+        if (!$("#submit-name").val()) {
+            $("#submit-name").css("border-color","red");
+            error = true;
+        };
+        if ($("#submit-link").val() && !$("#submit-link-desc").val()) {
+            $("#submit-link-desc").css("border-color","red");
+            error = true;
+        } else if ($("#submit-link-desc").val() && !$("#submit-link").val()) {
+            $("#submit-link").css("border-color","red");
+            error = true;
+        };
+        if (!error) {
+            var email = "acronymsubmissions@gmail.com";
+            
+            var acr = $("#submit-acr").val();
+            var name = $("#submit-name").val();
+            var desc = $("#submit-desc").val();
+            var link = $("#submit-link").val();
+            var link_desc = $("#submit-link-desc").val();
+            
+            var mailto = "mailto:" + email + "?subject=NewTerm&body="
+                + encodeURIComponent(acr + "\n" + name + "\n"
+                                     + desc + "\n" + link + "\n"
+                                     + link_desc);
+            document.location.href = mailto;
+            $("#submit-content").fadeOut();
+            $("#submit-wrapper").animate({
+                height: "200px",
+                marginTop: "-100px",
+            }, 400, function() {
+                $("#thanks-content").fadeIn();
+            });
         };
     });
 

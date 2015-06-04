@@ -254,6 +254,7 @@ $(document).ready(function(){
     });
     
     function closeAndClear() {
+        $("#submit-acr, #submit-name").css("border-color", "rgba(0,0,0,0.1)");
         $("#submit-wrapper").fadeOut(400, function(){
             $("#dimmer").fadeOut(400);
             $(".submit").val("");
@@ -263,7 +264,6 @@ $(document).ready(function(){
                 "margin-top":"-270px",
                 "height":"540px"
             });
-            $("#submit-acr, #submit-name").css("border-color", "rgba(0,0,0,0.1)");
         });
     };
     

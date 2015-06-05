@@ -1,10 +1,12 @@
 $(document).ready(function(){
 
-    xmlhttp = new XMLHttpRequest()
-    xmlhttp.open("GET", "file.txt", true);
-    xmlhttp.send();
-    xmldoc = xmlhttp.responseXML;
+    $.ajax({
+        type: "GET",
+        url: "file.txt",
+        dataType: "text",
+        success: function(data) {alert(data);}
+     });
     
-    console.log(xmldoc);
+//    console.log(xmldoc);
     
 });

@@ -75,7 +75,7 @@ definitions = {
     "MP":        "Marketplace|",
     "IE2K":      "Industrial Ethernet 2000 Series Switches|",
     "CDC":       "City Data Center|",
-    "SDP":       "Software Defined Platform|",
+    "SDP":       "Service Delivery Platform|In telecommunications, a service delivery platform (SDP) is usually a set of components that provide a services delivery architecture (such as service creation, session control and protocols) for a type of service. Although the TM Forum (TMF) is working on defining specifications in this area, there is no standard definition of SDP in the industry and different players define its components, breadth, and depth in slightly different ways.|https://en.wikipedia.org/wiki/Service_delivery_platform|Wiki",
     "VSN":       "Virtual Service Node|",
     "SBP":       "Subscription Billing Platform|",
     "USP":       "Urban Service Provider|",

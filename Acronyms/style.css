@@ -194,3 +194,68 @@ button:hover {
     font-size: 18px;
     margin-top: 10px;
 }
+
+@media only screen and (max-device-width: 700px), only screen and (max-width: 700px) {
+    #input-wrapper {
+        width: 100%;
+    }
+    #input {
+        width: 72%;
+        margin-bottom: 60px;
+    }
+    #results {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+    #output {
+        width: 100%;
+    }
+    .acronym {
+        font-size: 18px;
+    }
+    .definition {
+        width: 96%;
+        padding: 0 2% 10px 2%;
+    }
+    .link {
+        top: -30px;
+    }
+    .search {
+        font-size: 24px;
+    }
+
+    #submit-wrapper {
+        width: 96%;
+        left: 2%;
+        margin-left: 0;
+    }
+    .submit {
+        width: 96%;
+    }
+    #submit-acr, #submit-name {
+        font-size: 24px;
+    }
+    #submit-link, #submit-link-desc {
+        font-size: 20px;
+    }
+    button {
+        margin-top: 30px;
+    }
+    #thanks-content {
+    }
+    #thanks-title {
+        font-size: 6vw;
+    }
+    #thanks-subtitle {
+        height: 33%;
+    }
+    button#close {
+        margin-top: 15px;
+    }
+
+}
